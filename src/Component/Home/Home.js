@@ -10,10 +10,12 @@ function Home() {
     const cashCollectInterval = useRef();
     const allNotes = [20, 50, 100];
 
+    //Handle amount change
     const onInputChange = ({ value }) => {
         setMoney(value)
     }
 
+    //On submitting withdrawal amount
     const onSubmit = () => {
         clearInterval(cashCollectInterval.current);
         setTimer(timerCount)
@@ -37,6 +39,7 @@ function Home() {
         countNotes(value);
     }
 
+    //Counts number of specific notes
     const countNotes = (value) => {
         let tmpValue = value, tmpArr = [0, 0, 0];
 
