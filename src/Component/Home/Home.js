@@ -22,12 +22,16 @@ function Home() {
         cashCollectInterval.current = undefined
 
         let value = Number(money)
+        if (!value) {
+            alert("Please enter valid value")
+            return;
+        }
         if (value % 10 !== 0) {
             alert('Please enter money multiple of 10 (except 10 and 30)')
             return;
         }
         else if (value < 0 || value === 10 || value === 30) {
-            alert('Money should be greater than 0 or != 10 or != 30 ')
+            alert('Money should be greater than 0 or != 10 or != 30')
             return;
         }
         else if (value > 10000000) {
