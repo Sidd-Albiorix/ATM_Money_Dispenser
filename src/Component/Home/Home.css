@@ -1,0 +1,55 @@
+.homeWrapper {
+    width: 640px;
+    left: 50%;
+    padding: 0 16px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -250px);
+    transform: translate(-50%, -200px);
+}
+
+.headerText {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.inputDiv {
+    margin: 12px 0px;
+    justify-content: center;
+    display: flex;
+}
+
+.inputDiv .innerDiv {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputDiv .innerDiv input {
+    width: 200px;
+    line-height: 35px;
+    padding: 0px 0px 0px 8px;
+    font-size: 18px;
+}
+
+.inputDiv .innerDiv button {
+    width: 70px;
+}
+
+.imgWrapper .innerImgDiv {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.imgWrapper .multiplier {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.imgWrapper .noteCount {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+}
